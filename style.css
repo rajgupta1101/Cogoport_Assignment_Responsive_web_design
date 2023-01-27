@@ -1,0 +1,813 @@
+* {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mobile_navbar {
+    display: none;
+}
+
+.sidebar_navigation {
+    display: flex;
+    height: 100vh;
+    width: 22vw;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.navbar {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navbar_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar img {
+    margin-top: 3.2rem;
+}
+
+.navbar_Footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar_Footer_img {
+    width: 60%;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+
+.sub_navbar {
+    width: 78%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3.4rem 2rem 0.7rem 2rem;
+    border-right: 0.1rem solid rgb(230,230,230);
+    border-left: 0.1rem solid rgb(230,230,230);;
+}
+
+.sub_navbar_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #344054;
+}
+
+.sub_navbar_header > p {
+    margin-bottom: 1.3rem;
+}
+
+.sub_navbar_headerContent {
+    display: flex;
+    align-items: center;
+    padding: 1.2rem 0.8rem;
+}
+
+.sub_navbar_headerContent > img {
+    margin-right: 0.8rem;
+}
+
+.sub_navbar_headerContent > span {
+    margin-left: 6.5vw;
+    padding: 0.2rem 0.5rem;
+    border-radius: 1rem;
+}
+
+.sub_navbar_Footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.1rem;
+}
+
+.main_content_container {
+    width: 75vw;
+}
+
+.backgrd {
+    height: 25vh;
+    width: 103%;
+    background-image: linear-gradient(150deg, rgb(144, 21, 227), rgba(243, 211, 71, 0.87));
+}
+
+.contentBox {
+    width: 100%;
+}
+
+.contentBoxHeader {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contentBoxHeader_profileInfo {
+    width: 32%;
+    display: flex;
+    position: relative;
+}
+
+.contentBoxHeader_profileInfo > div {
+    margin-left: 4rem;
+}
+
+.profile_pic {
+    width: 45%;
+    position: relative;
+    top: -3.5rem;
+    left: 2rem;
+    border: 0.4rem solid white;
+    border-radius: 50%;
+}
+
+#btick_bg {
+    position: absolute;
+    top: 45%;
+    left: 42%;
+    transform: rotate(22.5deg);
+}
+
+#vtick {
+    position: absolute;
+    top: 50%;
+    left: 44%;
+}
+
+.name {
+    position: relative;
+    top: 2rem;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.email {
+    position: relative;
+    top: 2.3rem;
+    font-size: 1.6rem;
+    color: #475467;
+}
+
+.contentBoxHeader_Button {
+    display: flex;
+    padding-right: 2rem;
+}
+
+.contentBoxHeader_Button > div {
+    height: 4rem;
+    position: relative;
+    top: 3rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 1rem 1.6rem;
+    border-radius: 0.8rem;
+}
+
+.shareButton {
+    display: flex;
+    align-items: center;
+    color: #344054;
+    border: 0.1rem solid #D0D5DD;
+    margin-right: 1rem;
+}
+
+.shareButton > img {
+    position: relative;
+    right: 0.5rem;
+}
+
+.viewButton {
+    background-color: #7F56D9;
+    color: white;
+    border: 0.1rem solid #7F56D9;
+}
+
+.contentBoxMain {
+    display: flex;
+    width: 100%;
+    padding-bottom: 4rem;
+    border-bottom: 0.1rem solid rgb(230,230,230);
+}
+
+.contentBoxMain_Left {
+    height: 100%;
+    width: 28%;
+    padding: 1rem 2rem;
+}
+
+.user_name {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #344054;
+    line-height: 2rem;
+}
+
+.user_email {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #475467;
+}
+
+.contentBoxMain_Right {
+    width: 72%;
+    border-radius: 1rem;
+    box-shadow: 0rem -0.2rem 1rem rgba(16, 24, 40, 0.1), 0rem 0.2rem 0.3rem rgba(16, 24, 40, 0.06);
+}
+
+.contentBoxForm {
+    width: 100%;
+    padding: 1rem 2rem;
+}
+
+.content_form_name {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 1.6rem;
+}
+
+.content_form_name > div {
+    width: 50%;
+}
+
+#firstName {
+    margin-right: 2rem;
+}
+
+.contentBoxForm_label {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #344054;
+    line-height: 3rem;
+}
+
+.contentBoxForm_input_holder {
+    height: 4.4rem;
+    width: 100%;
+    padding: 1rem 1.4rem;
+    font-size: 1.6rem;
+    color: #101828;
+    text-align: left;
+    background-color: white;
+    border: 0.1rem solid #D0D5DD;
+    border-radius: 0.8rem;
+    box-shadow: 0rem 0.1rem 0.2rem rgba(16, 24, 40, 0.05);
+}
+
+.contentBoxForm_email {
+    width: 100%;
+}
+
+.contentBoxForm_email > img {
+    position: relative;
+    top: 0.2rem;
+    margin-right: 0.4rem;
+}
+
+.content_form_upload {
+    width: 100%;
+    display: flex;
+}
+
+.contentBoxForm_img {
+    width: 8%;
+    margin-top: 1rem;
+}
+
+.contentBoxForm_img > img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.contentBoxForm_upload {
+    width: 90%;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #475467;
+    text-align: center;
+    line-height: 2.5rem;
+    margin: 1rem 0rem 0rem 2rem;
+    padding: 5rem 0rem;
+    border: 0.1rem solid #EAECF0;
+    border-radius: 1.2rem;
+    box-shadow: 0rem 0.1rem 0.2rem rgba(16, 24, 40, 0.05);
+}
+
+.contentBoxForm_upload span {
+    color: #7F56D9;
+    font-weight: 600;
+}
+
+.content_form_button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2.5rem;
+}
+
+.content_form_button_cancel {
+    height: 4rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 1rem 1.6rem;
+    margin-right: 1rem;
+    background-color: white;
+    color: #344054;
+    border: 0.1rem solid #D0D5DD;
+    border-radius: 0.8rem;
+}
+
+.content_form_button_save {
+    height: 4rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 1rem 1.6rem;
+    background-color: #7F56D9;
+    color: white;
+    border: 0.1rem solid #7F56D9;
+    border-radius: 0.8rem;
+}
+
+.contentBoxFooter {
+    display: flex;
+    width: 100%;
+    margin: 4rem 0rem 2rem 0rem;
+}
+
+.content_form_footer_header {
+    display: flex;
+}
+
+.content_form_footer_header > img {
+    height: 2rem;
+    width: 3.6rem;
+    margin-right: 1rem;
+}
+
+.content_form_userName_email {
+    margin-top: 2rem;
+}
+
+.contentBoxForm_footer_input_holder {
+    height: 4.4rem;
+    padding: 1rem 1.4rem;
+    font-size: 1.6rem;
+    background-color: white;
+    border: 0.1rem solid #D0D5DD;
+    box-shadow: 0rem 0.1rem 0.2rem rgba(16, 24, 40, 0.05);
+}
+
+.input_holder1 {
+    width: 22%;
+    color: #475467;
+    text-align: left;
+    border-radius: 0.8rem 0rem 0rem 0.8rem;
+}
+
+#email_input1 {
+    width: 13%;
+}
+
+.input_holder2 {
+    width: 74%;
+    position: relative;
+    left: -1rem;
+    color: #101828;
+    text-align: left;
+    border-radius: 0rem 0.8rem 0.8rem 0rem;
+}
+
+#email_input2 {
+    width: 84%;
+}
+
+.contentBoxFooter_description {
+    height: 5rem;
+    padding-bottom: 15rem;
+    border-radius: 0.8rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.contentBoxFooter_regular {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content_form_userName_email > div{
+    display: flex;
+}
+
+.content_form_iconBox {
+    width: 28%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 2rem;
+}
+
+.contentBoxForm_footer_country_timezone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.australian_flag {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    position: relative;
+    top: 0.2rem;
+    margin-right: 0.4rem;
+}
+
+.clock {
+    position: relative;
+    top: 0.2rem;
+    margin-right: 0.4rem;
+}
+
+.contentBoxFooter span {
+    color: #101828;
+    font-weight: 600;
+}
+
+
+@media(min-width: 2000px) {
+    html {
+        font-size: 75%;
+    }
+
+    .navbar_icon {
+        height: 2.7rem;
+        width: 2.7rem;
+    }
+
+    #btick_bg {
+        width: 3.5rem;
+        position: absolute;
+        top: 47%;
+        left: 40%;
+        transform: rotate(22.5deg);
+    }
+    
+    #vtick {
+        width: 2rem;
+        position: absolute;
+        top: 52%;
+        left: 42%;
+    }
+}
+
+@media(min-width: 1700px) {
+    html {
+        font-size: 70%;
+    }
+
+    .navbar_icon {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    #btick_bg {
+        width: 3.5rem;
+        position: absolute;
+        top: 42%;
+        left: 42%;
+        transform: rotate(22.5deg);
+    }
+    
+    #vtick {
+        width: 2rem;
+        position: absolute;
+        top: 47%;
+        left: 44%;
+    }
+}
+
+@media(max-width: 1270px) {
+    html {
+        font-size: 55%;
+    }
+
+    .navbar_icon {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    #btick_bg {
+        width: 3rem;
+        position: absolute;
+        top: 42%;
+        left: 42%;
+        transform: rotate(22.5deg);
+    }
+    
+    #vtick {
+        width: 1.5rem;
+        position: absolute;
+        top: 47%;
+        left: 44%;
+    }
+
+    .extraIcon {
+        width: 2.2rem;
+    }
+}
+
+@media(max-width: 1120px) {
+    html {
+        font-size: 50%;
+    }
+
+    .navbar_icon {
+        height: 1.7rem;
+        width: 1.7rem;
+    }
+
+    #btick_bg {
+        width: 2.7rem;
+        position: absolute;
+        top: 42%;
+        left: 42%;
+        transform: rotate(22.5deg);
+    }
+    
+    #vtick {
+        width: 1.3rem;
+        position: absolute;
+        top: 47%;
+        left: 45%;
+    }
+}
+
+@media(max-width: 970px) {
+    html {
+        font-size: 45%;
+    }
+
+    .navbar_icon {
+        height: 1.7rem;
+        width: 1.7rem;
+    }
+
+    #btick_bg {
+        width: 2.7rem;
+        position: absolute;
+        top: 42%;
+        left: 42%;
+        transform: rotate(22.5deg);
+    }
+    
+    #vtick {
+        width: 1.3rem;
+        position: absolute;
+        top: 47%;
+        left: 45%;
+    }
+
+    .extraIcon {
+        width: 2rem;
+    }
+
+    .regularIcon {
+        width: 1.2rem;
+    }
+}
+
+@media(max-width: 880px) {
+    .mobile_navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 7rem;
+        width: 100vw;
+    }
+
+    .mobile_navbar_title {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        margin-left: 3rem;
+    }
+
+    .mobile_navbar_title > img {
+        width: 3rem;
+        height: 3rem;
+        margin-right: 2rem;
+    }
+
+    .mobile_navbar_title > span  {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .mobile_navbar > img {
+        width: 3rem;
+        margin-right: 3rem;
+    }
+
+    .sidebar_navigation {
+        display: none;
+    }
+
+    .main_content_container {
+        width: 100vw;
+    }
+
+    .contentBoxMain {
+        padding-bottom: 0rem;
+        border-bottom: none;
+    }
+
+    .contentBoxMain_Right {
+        width: 92%;
+        margin: 1.4rem 2rem 1.4rem 2rem;
+    }
+
+    #btick_bg {
+        width: 3rem;
+        position: absolute;
+        top: 42%;
+        left: 42%;
+        transform: rotate(22.5deg);
+    }
+
+    #vtick {
+        width: 1.5rem;
+        position: absolute;
+        top: 47%;
+        left: 44%;
+    }
+}
+
+@media(max-width: 650px) {
+    html {
+        font-size: 35%;
+    }
+
+    .navbar_icon {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    #btick_bg {
+        width: 2.9rem;
+        position: absolute;
+        top: 42%;
+        left: 42%;
+        transform: rotate(22.5deg);
+    }
+    
+    #vtick {
+        width: 1.5rem;
+        position: absolute;
+        top: 47%;
+        left: 44%;
+    }
+
+    .dropdownIcon {
+        width: 1.8rem;
+    }
+}
+
+@media(max-width: 430px) {
+    html {
+        font-size: 32%;
+    }
+
+    .contentBoxHeader {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .contentBoxHeader_Button {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 3rem;
+        margin-bottom: 2rem;
+    }
+    
+    .contentBoxHeader_Button > div {
+        position: static;
+    }
+
+    .contentBoxMain, .contentBoxFooter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contentBoxMain_Left {
+        width: 100%;
+    }
+
+    .content_form_name {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content_form_name > div {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .content_form_upload {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .contentBoxForm_upload {
+        width: 100%;
+        margin-left: 0;
+        padding: 3rem 0rem;
+    }
+
+    .content_form_userName_email > div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contentBoxFooter_regular {
+        width: 100%;
+    }
+
+    .content_form_iconBox {
+        margin-top: 1.3rem;
+    }
+
+    .dropdownIcon {
+        width: 1.4rem;
+    }
+
+    #btick_bg {
+        width: 2.5rem;
+        position: absolute;
+        top: 30%;
+        left: 45%;
+        transform: rotate(22.5deg);
+    }
+    
+    #vtick {
+        width: 1.2rem;
+        position: absolute;
+        top: 37%;
+        left: 48%;
+    }
+}
+
+@media(max-width: 310px) {
+    html {
+        font-size: 28%;
+    }
+
+    .contentBoxHeader_Button {
+        margin-top: 1rem;
+    }
+    
+
+    #btick_bg {
+        width: 2.2rem;
+        position: absolute;
+        top: 20%;
+        left: 45%;
+        transform: rotate(22.5deg);
+    }
+    
+    #vtick {
+        width: 1.2rem;
+        position: absolute;
+        top: 28%;
+        left: 48%;
+    }
+    .ten{
+        align-items: center;
+    }
+}
